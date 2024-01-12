@@ -13,8 +13,24 @@
 
 .card-stack {
     position: relative;
+
     img {
         position: absolute;
-        height: 300px;
+        height: 250px;
     }
+}
+
+.top-card {
+    cursor: pointer;
+    transition: all ease-in-out 125ms;
+
+    &:hover {
+        transform: scale(1.1) translateY(-10px);
+        transition: all ease-in-out 125ms;
+    }
+}
+
+.pick-card {
+    transform: scale(1.5) !important;
+    transition: all ease-in-out 125ms;
 }
